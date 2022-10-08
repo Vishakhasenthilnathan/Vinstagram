@@ -1,0 +1,74 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/background_layout"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+
+<ImageView
+    android:id="@+id/logoimageView"
+    android:layout_width="217dp"
+    android:layout_height="135dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="104dp"
+    android:layout_marginEnd="73dp"
+    android:layout_marginRight="73dp"
+    app:srcCompat="@drawable/instagram" />
+
+<EditText
+    android:id="@+id/userNameET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:ems="10"
+    android:hint="User Name"
+    android:inputType="textPersonName"
+    android:minHeight="48dp"
+    android:text="" />
+
+<EditText
+    android:id="@+id/passwordET"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="232dp"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:minHeight="48dp"
+    android:text="" />
+
+<Button
+    android:id="@+id/SignUpButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="130dp"
+    android:onClick="SignupClicked"
+    android:text="SIGNUP" />
+
+<TextView
+    android:id="@+id/LoginButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="143dp"
+    android:text="OR Click to LOGIN"
+    android:textColor="#058AF4"
+    android:textSize="15sp" />
+</RelativeLayout>
